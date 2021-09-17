@@ -1,0 +1,148 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    --font-color-firs: #90A4AE;
+    --font-color-second: #546E7A;
+    --font-color-third: #B0BEC5;
+    text-aling: center;
+}
+
+#main-div {
+    background-color: #C6ABF8;
+    width: 65vw;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template: 90vh/ 30vw 30vw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-areas: "image form";
+    margin-top: 3vw;
+    box-shadow: #EDD8FF 0 0 0.4vw;
+}
+
+#img-part {
+    grid-area: image;
+    background: url("kisspng-abstraction-blue-simple-abstract-blue-flowers-business-5aa179ecf0b227.3935839415205319489859.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: #FFCBF1 0 0 0.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#img-part img {
+    width: 20vw;
+    height: 50vh;
+}
+
+#img-part h1 {
+    color: var(--font-color-firs);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform:capitalize;
+
+}
+
+#img-part p {
+    color: var(--font-color-firs);
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+#form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    /*justify-items: center;*/
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    box-shadow: #FFCBF1 0 0 0.4vw;
+}
+
+label, legend {
+    display: block;
+    font-size: 0.9vw;
+    font-weight: 200;
+    margin-bottom: 3rem;
+    color: var(--font-color-third);
+    text-align: left;
+}
+
+#logo {
+    width: 7vw;
+    height: 20vh;
+}
+
+#form h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--font-color-firs);
+    text-transform: capitalize;
+}
+
+span {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--font-color-second);
+    padding: 0;
+}
+
+#google-icon {
+    width: 2rem;
+    height: 2rem;
+    color: blueviolet;
+    vertical-align: center;
+    /*padding-right:0.5vw;*/
+}
+
+#forget-password {
+    font-size: 1rem;
+    margin-top: -3vw;
+    margin-right: -8vw;
+    padding-bottom: 2vw;
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+button {
+    margin-top: -1vw;
+}
+
+@media screen and (max-width: 470px) {
+    #main-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #img-part {
+        display: none;
+    }
+
+    #form {
+       padding-bottom: 5vh;
+        background-image: url("kisspng-abstraction-blue-simple-abstract-blue-flowers-business-5aa179ecf0b227.3935839415205319489859.png");
+    }
+    #logo{
+        width: 30vw;
+        height: 60vh;
+    }
+    #forget-password{
+        margin:auto;
+        padding-bottom: 2vw;
+    }
+}
